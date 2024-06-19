@@ -1,0 +1,26 @@
+19-06-2024 19:38:46 - File copied: Guiao4\accommodation.py to Guiao4_replica\.\accommodation.py
+19-06-2024 19:38:46 - File copied: Guiao4\agency.py to Guiao4_replica\.\agency.py
+19-06-2024 19:38:46 - File copied: Guiao4\Agencydiagram.puml to Guiao4_replica\.\Agencydiagram.puml
+19-06-2024 19:38:46 - File copied: Guiao4\armazem.py to Guiao4_replica\.\armazem.py
+19-06-2024 19:38:46 - File copied: Guiao4\cars.py to Guiao4_replica\.\cars.py
+19-06-2024 19:38:46 - File copied: Guiao4\comboio.py to Guiao4_replica\.\comboio.py
+19-06-2024 19:38:46 - File copied: Guiao4\comboiosDiagrama.puml to Guiao4_replica\.\comboiosDiagrama.puml
+19-06-2024 19:38:46 - File copied: Guiao4\comboios_teste.py to Guiao4_replica\.\comboios_teste.py
+19-06-2024 19:38:46 - File copied: Guiao4\mercadorias.py to Guiao4_replica\.\mercadorias.py
+19-06-2024 19:38:46 - File copied: Guiao4\testAgency.py to Guiao4_replica\.\testAgency.py
+19-06-2024 19:38:46 - Directory created: Guiao4_replica\__pycache__
+19-06-2024 19:38:46 - File copied: Guiao4\__pycache__\accommodation.cpython-311.pyc to Guiao4_replica\__pycache__\accommodation.cpython-311.pyc
+19-06-2024 19:38:46 - File copied: Guiao4\__pycache__\agency.cpython-311.pyc to Guiao4_replica\__pycache__\agency.cpython-311.pyc
+19-06-2024 19:38:46 - File copied: Guiao4\__pycache__\armazem.cpython-311.pyc to Guiao4_replica\__pycache__\armazem.cpython-311.pyc
+19-06-2024 19:38:46 - File copied: Guiao4\__pycache__\cars.cpython-311.pyc to Guiao4_replica\__pycache__\cars.cpython-311.pyc
+19-06-2024 19:38:46 - File copied: Guiao4\__pycache__\comboio.cpython-311.pyc to Guiao4_replica\__pycache__\comboio.cpython-311.pyc
+19-06-2024 19:38:46 - File copied: Guiao4\__pycache__\mercadorias.cpython-311.pyc to Guiao4_replica\__pycache__\mercadorias.cpython-311.pyc
+19-06-2024 19:42:06 - Directory created: Guiao4_replica\newfolder
+19-06-2024 19:42:06 - File copied: Guiao4\newfolder\d.c to Guiao4_replica\newfolder\d.c
+19-06-2024 19:42:06 - Directory created: Guiao4_replica\newfolder2
+19-06-2024 19:42:06 - File copied: Guiao4\newfolder2\file.ts to Guiao4_replica\newfolder2\file.ts
+19-06-2024 19:42:06 - File copied: Guiao4\newfolder2\file2.py to Guiao4_replica\newfolder2\file2.py
+19-06-2024 19:42:06 - Directory created: Guiao4_replica\newfolder2\folder2.2
+19-06-2024 19:42:06 - File copied: Guiao4\newfolder2\folder2.2\file.css to Guiao4_replica\newfolder2\folder2.2\file.css
+19-06-2024 19:42:06 - File copied: Guiao4\newfolder2\folder2.2\file.html to Guiao4_replica\newfolder2\folder2.2\file.html
+19-06-2024 19:42:06 - File copied: Guiao4\newfolder2\folder2.2\file.js to Guiao4_replica\newfolder2\folder2.2\file.js

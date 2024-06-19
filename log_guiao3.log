@@ -1,0 +1,24 @@
+19-06-2024 19:29:46 - File copied: Guiao3\fila_teste.py to Guiao3_replica\.\fila_teste.py
+19-06-2024 19:29:46 - File copied: Guiao3\LinkedList.py to Guiao3_replica\.\LinkedList.py
+19-06-2024 19:29:46 - File copied: Guiao3\newQueue.py to Guiao3_replica\.\newQueue.py
+19-06-2024 19:29:46 - File copied: Guiao3\newStack.py to Guiao3_replica\.\newStack.py
+19-06-2024 19:29:46 - File copied: Guiao3\palindromo.py to Guiao3_replica\.\palindromo.py
+19-06-2024 19:29:46 - File copied: Guiao3\pilha_teste.py to Guiao3_replica\.\pilha_teste.py
+19-06-2024 19:29:46 - File copied: Guiao3\Queue.py to Guiao3_replica\.\Queue.py
+19-06-2024 19:29:46 - File copied: Guiao3\Stack.py to Guiao3_replica\.\Stack.py
+19-06-2024 19:29:46 - File copied: Guiao3\__init__.py to Guiao3_replica\.\__init__.py
+19-06-2024 19:29:46 - Directory created: Guiao3_replica\__pycache__
+19-06-2024 19:29:46 - File copied: Guiao3\__pycache__\LinkedList.cpython-311.pyc to Guiao3_replica\__pycache__\LinkedList.cpython-311.pyc
+19-06-2024 19:29:46 - File copied: Guiao3\__pycache__\newQueue.cpython-311.pyc to Guiao3_replica\__pycache__\newQueue.cpython-311.pyc
+19-06-2024 19:29:46 - File copied: Guiao3\__pycache__\newStack.cpython-311.pyc to Guiao3_replica\__pycache__\newStack.cpython-311.pyc
+19-06-2024 19:29:46 - File copied: Guiao3\__pycache__\Queue.cpython-311.pyc to Guiao3_replica\__pycache__\Queue.cpython-311.pyc
+19-06-2024 19:29:46 - File copied: Guiao3\__pycache__\Stack.cpython-311.pyc to Guiao3_replica\__pycache__\Stack.cpython-311.pyc
+19-06-2024 19:29:46 - File copied: Guiao3\__pycache__\__init__.cpython-311.pyc to Guiao3_replica\__pycache__\__init__.cpython-311.pyc
+19-06-2024 19:30:46 - File removed: Guiao3_replica\newfile.c
+19-06-2024 19:31:46 - File copied: Guiao3\newfiletocopy.c to Guiao3_replica\.\newfiletocopy.c
+19-06-2024 19:31:46 - Directory created: Guiao3_replica\newdirtocopy
+19-06-2024 19:32:46 - File copied: Guiao3\newfiletocopy.c to Guiao3_replica\.\newfiletocopy.c
+19-06-2024 19:32:46 - File copied: Guiao3\newdirtocopy\1.c to Guiao3_replica\newdirtocopy\1.c
+19-06-2024 19:32:46 - File copied: Guiao3\newdirtocopy\2.c to Guiao3_replica\newdirtocopy\2.c
+19-06-2024 19:37:11 - Updated file content : Guiao3\newfiletocopy.c to Guiao3_replica\.\newfiletocopy.c
+19-06-2024 19:37:11 - Updated file content : Guiao3\newdirtocopy\2.c to Guiao3_replica\newdirtocopy\2.c

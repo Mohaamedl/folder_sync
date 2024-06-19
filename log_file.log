@@ -1,0 +1,8 @@
+ERROR:root:Exception occured during synchronization: Unrecognised argument(s): formar
+ERROR:root:Exception occured during synchronization: name 'walk' is not defined
+ERROR:root:Exception occured during synchronization: name 'walk' is not defined
+ERROR:root:Exception occured during synchronization: Unrecognised argument(s): formar
+19-06-2024 19:19:50 - Directory created: Guiao1_copy\New folder
+19-06-2024 19:20:10 - File copied: Guiao1\New folder\New Text Document.txt to Guiao1_copy\New folder\New Text Document.txt
+19-06-2024 19:20:40 - File removed: Guiao1_copy\New folder\New Text Document.txt
+19-06-2024 19:20:40 - Directory removed: Guiao1_copy\New folder

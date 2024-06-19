@@ -1,0 +1,28 @@
+@startuml
+class Comboio{
+    +locomotiva
+    +listavagoes
+}
+class Vagao{
+    +id 
+    +capMax
+}
+class Locomotiva{
+
+}
+class Mercadoria{
+    +nome
+    +peso
+    +empresa
+}
+class Armazem{
+    +local
+    +listaMercadorias
+}
+Comboio "1" *-- "n" Vagao
+Comboio  *--  Locomotiva
+Armazem "1" *-- "n" Mercadoria
+
+
+
+@enduml

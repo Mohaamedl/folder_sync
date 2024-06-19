@@ -1,0 +1,53 @@
+@startuml
+Class Agency{
+    +name:str
+    +adress:str
+    +List Accommodation 
+    +List Vehicle
+    rentVehicle()
+    devolution()
+}
+class Accommodation{
+    +name:str
+    +local:str
+    +pricePerNight:float
+    +evaluation:float
+    +availability=True
+    +checIn()
+    +checkOut()
+
+}
+class Apartment{
+    +numRooms:int
+}
+class Room{
+    +type
+}
+class Vehicle{
+    +brand: str
+    +model : str
+    +plateNum : str
+    +maxSpeed : int
+    +deliver()
+    +take()
+    +getType()
+}
+class EletricVehicle{
+    
+
+}
+class DieselVehicle{
+    
+
+}
+class GasolineVehicle {
+
+}
+Agency "1" *-- "n" Accommodation
+Apartment --> Accommodation
+Room --> Accommodation
+EletricVehicle --> Vehicle
+DieselVehicle --> Vehicle
+GasolineVehicle --> Vehicle
+Agency "1" *-- "n" Vehicle
+@enduml
