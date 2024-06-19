@@ -85,7 +85,10 @@ To run all tests using pytest, navigate to your project directory and execute:
 pytest
 
 ```
-![alt text](image-1.png)
+You should see output similar to the following (the exact time may vary based on your machine):
+
+<img src="results.png" alt="Alt text" style="display: block; margin: 0 auto;">
+
 Alternatively, you can execute each test individually. Here are some examples: 
 ``` 
 # Run performance test and save results to log file
