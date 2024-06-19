@@ -1,4 +1,4 @@
-# folder_sync Folder Synchronization
+# folder_sync - Folder Synchronization
 This script performs one-way synchronization between a source folder and a replica folder. It periodically updates the replica folder to match the source folder, logging file operations to a specified log file and the console.
 
 ## Getting Started
@@ -85,6 +85,7 @@ To run all tests using pytest, navigate to your project directory and execute:
 pytest
 
 ```
+![alt text](image-1.png)
 Alternatively, you can execute each test individually. Here are some examples: 
 ``` 
 # Run performance test and save results to log file
