@@ -20,6 +20,7 @@ def sync_folders(source,replica, log_file):
         logging.basicConfig(filename =log_file,level=logging.INFO,
                             format="%(asctime)s - %(message)s",
                             datefmt="%d-%m-%Y %H:%M:%S")
+        
         # Synchronize directories
         for src_dir,dirs,files in os.walk(source):
             relative_path = os.path.relpath(src_dir,source)

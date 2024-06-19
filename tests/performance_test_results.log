@@ -1,0 +1,8 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.4, pytest-8.2.2, pluggy-1.5.0
+rootdir: C:\Users\moham\Desktop\veeam_test\folder_sync
+collected 1 item
+
+tests\performance_test.py .                                              [100%]
+
+============================== 1 passed in 2.46s ==============================
