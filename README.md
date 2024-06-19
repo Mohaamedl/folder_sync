@@ -87,7 +87,9 @@ pytest
 ```
 You should see output similar to the following (the exact time may vary based on your machine):
 
-<img src="results.png" alt="Alt text" style="display: block; margin: 0 auto;">
+<img src="results.png" alt="Alt text" align="center">
+
+
 
 Alternatively, you can execute each test individually. Here are some examples: 
 ``` 
