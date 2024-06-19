@@ -86,8 +86,10 @@ pytest
 
 ```
 You should see output similar to the following (the exact time may vary based on your machine):
+<p align="center">
+  <img src="results.png" alt="Results image" >
+</p>
 
-<img src="results.png" alt="Alt text" align="center">
 
 
 
