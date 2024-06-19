@@ -6,8 +6,8 @@ import time
 
 import pytest
 
-from tests.folder_sync import sync_folders
-from tests.logging_config import setup_logging
+from folder_sync import sync_folders
+from logging_config import setup_logging
 
 
 @pytest.fixture(autouse=True)

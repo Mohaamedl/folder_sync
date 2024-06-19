@@ -4,7 +4,7 @@ import tempfile
 import time
 import pytest
 import logging
-import psutil  # Para monitoramento de recursos
+import psutil  
 
 from folder_sync import sync_folders
 from logging_config import setup_logging
