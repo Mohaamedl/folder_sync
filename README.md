@@ -121,3 +121,26 @@ The project includes Guiao3 and Guiao4 folders, each containing code and __pycac
 ## Requirements
 - Python 3.6 or higher
 - Packages listed in requirements.txt
+
+
+<br>
+<br>
+
+
+## Proposed Enhancements
+
+### Synchronization of Multiple Source Directories
+A significant enhancement would be enabling synchronization from multiple source directories to a single replica directory. This could be achieved by adding support for multiple source directory arguments via the command line or through a configuration file. For example, consider a main media directory with subdirectories for photos, videos, and documents. Each subdirectory could be synchronized separately to a central backup folder, ensuring all media types are copied and organized in the replica.
+
+### Synchronization of Multiple Replicas from a Single Source Directory
+Additionally, enabling synchronization from a single source directory to multiple replicas would be beneficial. For instance, in a collaborative work environment, a shared project directory could be synchronized with multiple local replicas for each team member. This ensures that everyone has up-to-date access to project files, whether working locally or remotely.
+
+### Bi-Directional Synchronization Between Multiple Source and Replica Directories
+Another capability could involve synchronizing multiple source directories with multiple replica directories. For example, in a centralized backup server setup, several directories from different servers could synchronize with corresponding replicas to ensure data safety and redundancy. Each source directory could be configured to synchronize with multiple replicas, ensuring data protection against hardware failures or other contingencies.
+
+
+
+
+
+
+
