@@ -12,7 +12,7 @@ from logging_config import setup_logging
 
 @pytest.fixture(autouse=True)
 def setup_logging_for_tests():
-    setup_logging("test_log.log")
+    setup_logging("tests/stress_test_log.log")
 
 @pytest.fixture
 def setup_test_environment():
@@ -28,6 +28,7 @@ def log_and_assert(condition, message):
     assert condition, message
 
 def test_stress_sync(setup_test_environment):
+    """Tests the script under stressful conditions"""
     source, replica = setup_test_environment
     
     num_files = 10000
@@ -42,10 +43,22 @@ def test_stress_sync(setup_test_environment):
     creation_duration = time.time() - start_time
     logging.info(f"Created {num_files} files of {file_size} bytes each in {creation_duration:.2f} seconds")
 
-    # Sync the source to the replica
+    # (1) Temporarily suppress logging for sync_folders, comment this and (2) if you want to see all logs
+    logger = logging.getLogger()
+    original_level = logger.getEffectiveLevel()
+    for handler in logger.handlers:
+        handler.setLevel(logging.CRITICAL)
+
+    # Synchronize folders
     start_time = time.time()
-    sync_folders(source, replica, "test_log.log")
+    sync_folders(source, replica, "tests/stress_test_log.log")
     sync_duration = time.time() - start_time
+
+    # (2) Restore original logging level 
+    for handler in logger.handlers:
+        handler.setLevel(original_level)
+
+
     logging.info(f"Synchronized {num_files} files in {sync_duration:.2f} seconds")
 
     # Verify that all files were copied

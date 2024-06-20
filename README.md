@@ -81,7 +81,7 @@ Arguments
 
 ### All Tests
 To run all tests using pytest, navigate to your project directory and execute:
-```
+```bash
 pytest
 
 ```
@@ -94,18 +94,22 @@ You should see output similar to the following (the exact time may vary based on
 
 
 Alternatively, you can execute each test individually. Here are some examples: 
-``` 
+``` bash
 # Run performance test and save results to log file
 pytest tests/performance_test.py > tests/performance_test_results.log
-
+```
+```bash
 # Run unit tests
 pytest tests/unit_tests.py > tests/unit_test_results.log
-
+```
+```bash
 # Run stress test
 pytest tests/stress_test.py > tests/stress_test_results.log
-
-
 ```
+### Example Folders
+
+The project includes Guiao3 and Guiao4 folders, each containing code and __pycache__ directories for personalized tests (create, delete, and update operations).
+
 ## Test Types
 
 - Performance Test: Evaluates the performance of the synchronization process under load, measuring factors like file creation, synchronization time, and resource usage.

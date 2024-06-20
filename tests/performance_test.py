@@ -1,17 +1,21 @@
+import logging
 import os
 import shutil
 import tempfile
 import time
+
+import psutil
 import pytest
-import logging
-import psutil  
 
 from folder_sync import sync_folders
 from logging_config import setup_logging
 
+
 @pytest.fixture(autouse=True)
 def setup_logging_for_tests():
-    setup_logging("test_log.log")
+    setup_logging("tests/performance_test_log.log")
+    yield
+    logging.shutdown()  # Ensure all logging is flushed at the end of tests
 
 @pytest.fixture
 def setup_test_environment():
@@ -23,7 +27,8 @@ def setup_test_environment():
 
 def log_and_assert(condition, message):
     logging.info(message)
-    logging.getLogger().handlers[0].flush()  # Garante que o log seja escrito imediatamente
+    for handler in logging.getLogger().handlers:
+        handler.flush()  # Ensure the log is written immediately
     assert condition, message
 
 def measure_resource_usage():
@@ -37,12 +42,14 @@ def measure_resource_usage():
     return cpu_percent, memory_mb
 
 def test_performance_sync(setup_test_environment):
+    """Performance testing and evaluation of script functionality."""
+    logging.info("Starting test_performance_sync")
     source, replica = setup_test_environment
     
     num_files = 1000
-    file_size = 1024  # 1 KB por arquivo
+    file_size = 1024  # 1 KB per file
 
-    # Criação de arquivos de teste
+    # Create test files
     start_time = time.time()
     total_size_created = 0
     for i in range(num_files):
@@ -55,18 +62,22 @@ def test_performance_sync(setup_test_environment):
 
     logging.info(f"Created {num_files} files ({total_size_created / 1024 / 1024:.2f} MB) in {creation_duration:.2f} seconds")
 
-    # Sincronização de pastas
+    # Synchronize folders
     start_time = time.time()
-    sync_folders(source, replica, "test_log.log")
+    sync_folders(source, replica, "tests/performance_test_log.log")
     sync_duration = time.time() - start_time
 
-    # Verificação se todos os arquivos foram copiados
+    # Verify all files were copied
     all_files_copied = all(os.path.exists(os.path.join(replica, f"test_file_{i}.txt")) for i in range(num_files))
     log_and_assert(all_files_copied, "Performance test: all files copied successfully.")
 
     logging.info(f"Synchronized {num_files} files in {sync_duration:.2f} seconds")
 
-    # Medição de uso de recursos
+    # Measure resource usage
     cpu_usage, memory_usage = measure_resource_usage()
     logging.info(f"CPU Usage: {cpu_usage:.2f}%")
     logging.info(f"Memory Usage: {memory_usage:.2f} MB")
+
+    # Ensure all logs are written to file
+    for handler in logging.getLogger().handlers:
+        handler.flush()
